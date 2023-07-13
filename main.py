@@ -20,7 +20,7 @@ class DdocdocLoginTest(unittest.TestCase):
         self.dc['appActivity'] = '.ui.view.splash.SplashActivity'
         self.dc['platformName'] = 'android'
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', self.dc)
-#연습 1
+#연습 1  2
     def test_email_login(self):
         #element 노출될때까지 최대 10초 기다린다.
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "com.bbros.sayup:id/confirmBtn")))
